@@ -1,0 +1,14 @@
+apiVersion: virtus.dev/v1
+kind: Firewall
+metadata:
+  labels:
+    app.kubernetes.io/name: firewall
+    app.kubernetes.io/instance: firewall-sample
+    app.kubernetes.io/part-of: osdk
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: osdk
+  name: firewall-sample-2
+spec:
+  # TODO(user): Add fields here
+  size: 2
+  # containerPort: 11211

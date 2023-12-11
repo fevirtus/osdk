@@ -1,0 +1,47 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: osdk.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Firewall is the Schema for the firewalls API
+      displayName: Firewall
+      kind: Firewall
+      name: firewalls.virtus.dev
+      version: v1
+  description: operator for something
+  displayName: firewall-operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - yyy
+  links:
+  - name: Osdk
+    url: https://osdk.domain
+  maintainers:
+  - email: fevirtus@gmail.com
+    name: virtus
+  maturity: alpha
+  provider:
+    name: xxx
+  version: 0.0.0
